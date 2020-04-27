@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Nyssa Shaw Art</title>
+    
+    <!--[if lt IE9]><script_src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <!-- or -->
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    
+
+</head>
+    
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">    
+            <nav>
+                <ul class="pages">
+                    <li class="link"><a href="index.html"><img src="nav/design.png" title="Design"></a></li>
+                    <li class="link"><a href="animation.html"><img src="nav/animation.png" title="Animation"></a></li>
+                    <li class="link"><a href="resume.html"><img src="nav/resume.png" title="résumé"></a></li>
+                    <li class="mobile-logo"><a href="index.html"><img src="nav/logo.svg" title="Nyssa Shaw Logo"></a></li>
+                    <li class="link"><a href="illustration.html"><img src="nav/illustration.png" title="Illustration"></a></li>
+                    <li class="link"><a href="https://society6.com/nyssashaw" target="_blank"><img src="nav/shop.png" title="Shop"></a></li>
+                    <li class="link"><a href="about.html"><img src="nav/about.png" title="About"></a></li>
+                    <li class="link"><a href="https://sweetnyss-sketching.tumblr.com" target="_blank"><img src="nav/blog.png" title="Blog"></a></li>
+                </ul>
+                
+                <div class="pages-tablet">
+                    <img class="tablet-logo" src="nav/logo_tablet.svg" title="Nyssa Shaw Logo">
+                    <ul class="tablet-nav">
+                        <li><a href="index.html">DESIGN</a></li>
+                        <li><a href="animation.html">ANIMATION</a></li>
+                        <li><a href="illustration.html">ILLUSTRATION</a></li>
+                        <li><a href="https://sweetnyss-sketching.tumblr.com" target="_blank">SKETCHBLOG</a></li>
+                        <li><a href="https://society6.com/nyssashaw" target="_blank">SHOP</a></li> 
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="resume.html">RÉSUMÉ</a></li>
+
+                    </ul>
+                </div>    
+                
+                <div class="pages-mini">
+                    
+                    <div class="navbar navbar-default">
+                        <div class="mini-logo"><a href="index.html" ><img src="nav/logo.svg" title="Nyssa Shaw Logo"></a>
+                        </div>
+
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse navHeaderCollapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">DESIGN</a></li>
+                                <li><a href="animation.html">ANIMATION</a></li>
+                                <li><a href="illustration.html">ILLUSTRATION</a></li>
+                                <li><a href="https://sweetnyss-sketching.tumblr.com" target="_blank">SKETCHBLOG</a></li> 
+                                <li><a href="https://society6.com/nyssashaw" target="_blank">SHOP</a></li> 
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="resume.html">RÉSUMÉ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+                <iframe src="http://player.vimeo.com/video/117370250" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="submenu"><h2>GIFs</h2></div>
+            <div class="grid">
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_RumpusReach.gif"></div>
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_artorder_dragon.gif"></div>
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_gryphon_flight.gif"></div>
+                <div class="grid-item"><img src="images/animation/nyssashaw_shadow_bulldog.gif"></div>
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_shadowhound.gif"></div>
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_birds.gif"></div>
+                <div class="grid-item"><img src="images/animation/nyssashaw_reassuring_raccoon_03.gif"></div>
+                <div class="grid-item grid-item-hori"><img src="images/animation/nyssashaw_fox_and_fleas.gif"></div>
+                
+
+               <script>
+                    var grid = document.querySelector('.grid');
+
+                    var msnry = new Masonry( grid, {
+                      itemSelector: '.grid-item',
+                      columnWidth: 100,
+                    });
+
+                    imagesLoaded( grid ).on( 'progress', function() {
+                      // layout Masonry after each image loads
+                      msnry.layout();
+                    });
+
+                </script>
+            </div>
+            
+        </main>
+
+
+        <footer class="footer">
+            Let's create something together --> 
+            <a href="mailto:nyssashaw@gmail.com">nyssashaw@gmail.com</a> - Website copyright Nyssa Shaw 2016
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        
+    </div>
+        
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+header, nav, section, footer, aside, article, hgroup{
+    display: block;
+} /* browser compatibility: displays each of these elements one right on top of the other*/
+
+html {
+	height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    text-align: center;
+	width: 100%; /* very important, because your browser needs a starting point to
+	know how much to shrink or grow the other elements in your site*/
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-image: url(../nav/background.svg);
+    background-size: cover;
+}
+
+h2, h3, a, a:hover, a:visited{
+    text-decoration: none;
+    color: #f37139;
+}
+
+h1, {
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+  background-color: #ffcd50;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  letter-spacing: .1em;
+  border-radius: 4px;
+}
+
+.back_button{
+    padding-left: 10px;
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+}
+
+.wrapper {
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+.container{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.container img{
+    max-width: 100%;
+}
+
+.about{
+    margin: auto auto 150px auto;
+    max-width: 90%;
+}
+
+.bio{
+    padding: 20px;
+    text-align: left;
+    max-width: 80%;
+    margin: auto;
+}
+
+.bio img{
+    float: left;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.social{
+    margin-top: 50px;
+}
+
+.social img{
+    width: 50px;
+}
+
+.bird_display{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.bird_display img{
+    max-width: 30%;
+}
+
+.project{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+.project img{
+    max-width: 85%;
+    padding-bottom: 20px;
+}
+
+.description{
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    background-color: white;
+    padding: 20px;
+}
+
+.description_detail{
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+}
+
+.description_bio{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    background-color: white;
+    padding: 20px;
+}
+
+.submenu{
+    padding-top: 10px;
+    color: #f37139;
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    display: block;
+    color: #f37139;
+    width: 100%;
+    text-align: center;
+}
+
+.section_title{
+    display: block;
+    color: #f37139;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+.books{
+    width: 75%;
+}
+
+
+/* image overlay for design page */
+.imagebox {
+  background: white;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.imagebox img {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.imagebox .imagebox-desc {
+  background-color: rgba(243, 113, 57, 0.9);
+  color: white;
+  right: -10px;
+  font-size: 1.2em;
+  padding: 13% 0px 13% 0px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s opacity padding;
+  height: 90%;
+}
+
+.imagebox:hover img {
+  opacity: .8;
+}
+
+.imagebox:hover .imagebox-desc {
+  opacity: 1;
+  padding: 15% 15px 15% 15px;
+}
+
+/* end image overlay for design page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid{
+    max-width: 90%;
+    margin: 0 auto;
+}
+/* ---- .grid-item ---- */
+.grid-item { 
+    width: 250px;
+    margin-bottom: 10px;
+}
+.grid-item img{
+    width: 250px;
+}
+.grid-item img:hover{
+    opacity: .8;
+}
+
+.grid-item-hori { 
+    margin: 5px;
+}
+.grid-item-hori img{
+
+}
+
+
+.grid-item-squa { 
+    width: 200px; 
+    margin-bottom: 10px;
+}
+.grid-item-squa img{
+    width: 200px;
+}
+.grid-item-squa img:hover{
+    opacity: .8;
+}
+
+.header {
+	height: 150px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+header img{
+    margin: 5px;
+    max-height: 130px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.pages li {
+    display: inline-block;
+    margin: auto;
+}
+
+.link {
+    position: relative;
+    top: 100%;
+    transform: translateY(30%);
+}
+
+.tablet-link{
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.pages-mini { display: none; }
+.pages-tablet {display: none;}
+
+
+@media (max-width:72.000em){
+	
+	.pages { display: none; }
+    .pages-tablet {display: inherit;}
+}
+
+.tablet-nav li{
+    display: inline-block;
+    margin-left: .2em;
+    margin-right: .2em;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.tablet-nav a{
+    color: #F37139;
+    text-decoration: none;
+}
+.tablet-nav a:hover{
+    color: #FFCD50;
+    text-decoration: none;
+}
+
+@media (max-width:44.000em){
+	.pages-tablet {display: none;}
+    .pages-mini {display: block; }
+}
+
+.navbar-toggle{
+    margin-top: 65px;
+    background-color: #F37139;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: #FFCD50;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navHeaderCollapse{
+    margin-top: 150px;
+    font-size: 1.2em;
+    background-color: #F37139;
+    position: inherit;
+    z-index: 1;
+}
+    
+.mini-logo{
+    float: left;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: #f37139;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+
+}
+
+.footer img{
+    max-width: 25px;
+}
+
+.navbar-default{
+    height: 150px;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    font-size: 1.3em;
+    }
+.navbar-default .navbar-nav > li > a:hover {
+   color: #FFCD50; /*Change active text color here*/
+    font-size: 1.3em;
+    }

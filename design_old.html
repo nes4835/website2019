@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Nyssa Shaw Art</title>
+    
+    <!--[if lt IE9]><script_src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <!-- or -->
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    
+
+</head>
+    
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+<embed type="text/html" src="menu.html">
+            </header>
+        
+        <main class="container">
+                
+            <div class="grid">
+                <div class="grid-item"><a href="gameworks_website_redesign.html"><img src="images/design/GW_website_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="gameworks_coupon_book.html"><img src="images/design/couponbook_thumb_02.jpg"></a></div>
+                <div class="grid-item"><a href="gameworks_cards.html"><img src="images/design/GW_Cards.jpg"></a></div>
+                <div class="grid-item"><a href="gameworks_social_media.html"><img src="images/design/GW_Various.jpg"></a></div>
+                <div class="grid-item"><a href="precision_chiro.html"><img src="images/design/PC_website_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="viva_social_media.html"><img src="images/design/VIVA_social_media.jpg"></a></div>
+                <div class="grid-item"><a href="viva_mograph.html"><img src="images/design/VIVA_mograph_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="amuzical_child.html"><img src="images/design/app_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="herb_garden_website.html"><img src="images/design/website_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="herb_garden_club.html"><img src="images/design/book_thumb.jpg"></a></div>
+                <div class="grid-item"><a href="josey_branding.html"><img src="images/design/josey_thumb.jpg"></a></div>
+
+
+               <script>
+                    var grid = document.querySelector('.grid');
+
+                    var msnry = new Masonry( grid, {
+                      itemSelector: '.grid-item',
+                      columnWidth: 50,
+                    });
+
+                    imagesLoaded( grid ).on( 'progress', function() {
+                      // layout Masonry after each image loads
+                      msnry.layout();
+                    });
+
+                </script>
+            </div>
+            
+        </main>
+
+
+        <footer class="footer">
+            Let's create something together --> 
+            <a href="mailto:nyssashaw@gmail.com">nyssashaw@gmail.com</a> - Website copyright Nyssa Shaw 2016
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        
+    </div>
+        
+</body>
+
+</html>
